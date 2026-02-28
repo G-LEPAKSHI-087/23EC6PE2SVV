@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(16Feb2026:16:17:25):( ncverilog +access+r +sv +nccoverage+all digital_clock.sv clock_interface.sv clock_test.sv clock_tb.sv )
+s2::(26Feb2026:14:20:36):( ncverilog -sv digital_clock.sv clock_interface.sv clock_tb.sv +access+rwc -coverage all -covoverwrite -covtest clock_test )
+s3::(26Feb2026:14:26:48):( ncverilog -sv digital_clock.sv clock_interface.sv clock_tb.sv +access+rwc -coverage all -covoverwrite -covtest clock_test )
+s4::(26Feb2026:14:26:55):( ncverilog -sv digital_clock.sv clock_interface.sv clock_tb.sv +access+rwc -coverage all -covoverwrite )
+s5::(26Feb2026:14:29:07):( ncverilog -sv digital_clock.sv clock_interface.sv clock_tb.sv +access+rwc -coverage all )

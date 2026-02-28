@@ -1,0 +1,28 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Feb 26, 2026 at 14:29:07 IST
+ncverilog
+	-sv
+	digital_clock.sv
+	clock_interface.sv
+	clock_tb.sv
+	+access+rwc
+	-coverage
+	all
+Recompiling... reason: file './clock_interface.sv' is newer than expected.
+	expected: Mon Feb 16 16:03:03 2026
+	actual:   Mon Feb 16 16:27:59 2026
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .rst(intf.rst),
+                    |
+ncelab: *E,CUVUNF (./clock_tb.sv,14|20): Hierarchical name component lookup failed at 'rst'.
+        intf.rst = 1;
+               |
+ncelab: *E,CUVUNF (./clock_test.sv,24|15): Hierarchical name component lookup failed at 'rst'.
+        intf.rst = 0;
+               |
+ncelab: *E,CUVUNF (./clock_test.sv,26|15): Hierarchical name component lookup failed at 'rst'.
+ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	ncverilog	15.20-s086: Exiting on Feb 26, 2026 at 14:29:07 IST  (total: 00:00:00)
