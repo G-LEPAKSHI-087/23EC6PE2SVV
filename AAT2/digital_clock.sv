@@ -1,3 +1,14 @@
+//------------------------------------------------------------------------------
+// File        : digital_clock.sv
+// Author      : <G Lepakshi /1BM23EC087 >
+// Created     : <2026-03-1>
+// Module      : Design module
+// Project     : SystemVerilog and Verification (23EC6PE2SV),
+//               Faculty: Prof. Ajaykumar Devarapalli
+//
+// Description : Basic Digital Clock used for basic functional coverage example and uses a
+//               covergroup to measure input combination coverage.
+
 module digital_clock (
     input  logic clk,
     input  logic rst,          // Active-high synchronous reset
